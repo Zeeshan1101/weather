@@ -35,7 +35,7 @@ app.get("/weather", async (req, res) => {
     // q is being used to change cities with pagination function
     const cities = cityPagination(q);
     // calling openweathermap api to get weather cities provide in url and provide your api key in url
-    const weather = await axios.get(baseURL + `id=${cities}&appid={apikey}`);
+    const weather = await axios.get(baseURL + `id=${cities}&appid={9be62f8836a9e8b699daa13a9da25635}`);
     // Sending response back to client
     res.send(weather.data);
   } catch (e) {
